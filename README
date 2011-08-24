@@ -1,0 +1,55 @@
+jQuery.ease v1.0 and Vanderlee Easings v1.0
+https://github.com/vanderlee/easing
+
+Copyright (c) 2011 Martijn W. van der Lee
+Licensed under the MIT.
+
+A convenient plug-in for easy access to jQuery easing methods and a number of new easing methods.
+
+jQuery.ease
+
+    Syntax:
+        $.ease(<method>, <fraction>);
+        
+    Arguments:
+        method (required)
+            The name of the easing method to be used, i.e. 'linear' or 'swing'.
+        fraction (required)
+            A floating point number between 0 and 1 (set [0,1]) that indicates the current time as 
+            a fraction of the total duration, 0 being begin, 1 end.
+        
+    Return:
+        value
+			A value between 0 and 1, indicating the level returned by easing for a begin value
+			of 0 and an end value of 1.
+
+    Examples:
+        $.ease('swing', .5);    // returns the exact middle of the swing easing.
+		
+Vanderlee Easings
+	
+	The following easing methods are added:
+		random
+		halfRandom
+		quarterRandom
+		eighthRandom
+		chance
+		cosBounceIn
+		cosBounceOut
+		cosBounceInOut
+		twoLightWaves
+		twoWaves
+		twoHeavyWaves
+		fourLightWaves
+		fourWaves
+		fourHeavyWaves
+		eightLightWaves
+		eightWaves
+		eightHeavyWaves
+		sixteenLightWaves
+		sixteenWaves
+		sixteenHeavyWaves
+		twoSteps
+		fourSteps
+		eightSteps
+		sixteenSteps
