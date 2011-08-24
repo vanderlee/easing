@@ -28,6 +28,7 @@
 			}
 			
 			.graph {
+				clear:				both;
 				background-color:	#666;			
 				padding:			10px;
 				color:				white;
@@ -42,12 +43,11 @@
 		</style>
 						
 		<script src="jquery.ease-1.0.js"></script>
-		<script src="jquery.vanderlee-easing-1.0.js"></script>
+		<script src="jquery.vanderlee-easings-1.0.js"></script>
 		<script>			
 			$( function() {			
 				// For the documentation
 				$('#switcher').themeswitcher();
-				$("#tabs").tabs();
 							
 				var visible = true;
 				$('#animate').click( function() {
@@ -124,35 +124,5 @@
 		<div id="fader" style="width: 45%; float: left; padding: 10px; margin: 10px;" class="ui-widget-content ui-corner-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tellus felis, porttitor vitae sollicitudin vitae, bibendum non tellus. Maecenas congue molestie lacus, at vulputate nulla pellentesque non. Vivamus tempor gravida dui quis accumsan. Donec luctus accumsan elit eu interdum. Phasellus pellentesque felis in sem viverra semper. Proin nec sem quis dolor rhoncus aliquet eget in nibh. Proin sed quam ut mi viverra ullamcorper at dignissim ipsum. Praesent quis posuere neque.</div>
 		<div id="slider" style="width: 45%; float: right; padding: 10px; margin: 10px;" class="ui-widget-content ui-corner-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tellus felis, porttitor vitae sollicitudin vitae, bibendum non tellus. Maecenas congue molestie lacus, at vulputate nulla pellentesque non. Vivamus tempor gravida dui quis accumsan. Donec luctus accumsan elit eu interdum. Phasellus pellentesque felis in sem viverra semper. Proin nec sem quis dolor rhoncus aliquet eget in nibh. Proin sed quam ut mi viverra ullamcorper at dignissim ipsum. Praesent quis posuere neque.</div>
 		<div id="graph" class="graph"></div>
-		
-		<div id="tabs">
-			<ul>
-				<li><a href="#tab-overview">Overview</a></li>
-				<li><a href="#tab-options">Options</a></li>
-				<li><a href="#tab-events">Events</a></li>
-				<li><a href="#tab-methods">Methods</a></li>
-				<li><a href="#tab-theming">Theming</a></li>
-			</ul>
-			
-			<div id="tab-overview">
-				<p>TODO</p>
-			</div>
-			
-			<div id="tab-options">
-				<p>TODO</p>
-			</div>
-			
-			<div id="tab-events">
-				<p>TODO</p>
-			</div>
-			
-			<div id="tab-methods">
-				<p>TODO</p>
-			</div>
-			
-			<div id="tab-theming">
-				<p>TODO</p>
-			</div>
-		</div>		
 	</body>
 </html>
