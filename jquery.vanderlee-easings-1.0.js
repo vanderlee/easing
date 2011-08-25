@@ -12,10 +12,10 @@ jQuery.extend(jQuery.easing, {
 		var range = Math.min(lin, 1. - lin) / s;
 		return lin + (Math.random() * range * 2) - range;
 	},
-	random: function (x, t, b, c, d) 		{	return jQuery.easing._random(1);	},	
-	halfRandom: function (x, t, b, c, d) 	{	return jQuery.easing._random(2);	},	
-	quarterRandom: function (x, t, b, c, d) {	return jQuery.easing._random(4);	},	
-	eighthRandom: function (x, t, b, c, d) 	{	return jQuery.easing._random(8);	},	
+	random: function (x, t, b, c, d) 		{	return jQuery.easing._random(x, t, b, c, d, 1);	},	
+	halfRandom: function (x, t, b, c, d) 	{	return jQuery.easing._random(x, t, b, c, d, 2);	},	
+	quarterRandom: function (x, t, b, c, d) {	return jQuery.easing._random(x, t, b, c, d, 4);	},	
+	eighthRandom: function (x, t, b, c, d) 	{	return jQuery.easing._random(x, t, b, c, d, 8);	},	
 	
 	chance: function (x, t, b, c, d) {
 		//TODO Digitized
