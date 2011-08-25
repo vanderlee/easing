@@ -7,29 +7,15 @@
  */
 
 jQuery.extend(jQuery.easing, {
-	random: function (x, t, b, c, d) {
+	_random: function (x, t, b, c, d, s) {	
 		var lin = b + (c * t / d);
-		var range = Math.min(lin, 1. - lin);
+		var range = Math.min(lin, 1. - lin) / s;
 		return lin + (Math.random() * range * 2) - range;
 	},
-	
-	halfRandom: function (x, t, b, c, d) {
-		var lin = b + (c * t / d);
-		var range = Math.min(lin, 1. - lin) / 2.;
-		return lin + (Math.random() * range * 2) - range;
-	},
-	
-	quarterRandom: function (x, t, b, c, d) {
-		var lin = b + (c * t / d);
-		var range = Math.min(lin, 1. - lin) / 4.;
-		return lin + (Math.random() * range * 2) - range;
-	},
-				
-	eighthRandom: function (x, t, b, c, d) {
-		var lin = b + (c * t / d);
-		var range = Math.min(lin, 1. - lin) / 4.;
-		return lin + (Math.random() * range * 2) - range;
-	},
+	random: function (x, t, b, c, d) 		{	return jQuery.easing._random(1);	},	
+	halfRandom: function (x, t, b, c, d) 	{	return jQuery.easing._random(2);	},	
+	quarterRandom: function (x, t, b, c, d) {	return jQuery.easing._random(4);	},	
+	eighthRandom: function (x, t, b, c, d) 	{	return jQuery.easing._random(8);	},	
 	
 	chance: function (x, t, b, c, d) {
 		//TODO Digitized
