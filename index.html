@@ -37,7 +37,7 @@
 				box-shadow: 		inset 2px 2px 8px #333;
 				font-family:		monospace;
 				font-size:			1px;				
-				height: 			200px;
+				height: 			128px;
 				margin:				10px;
 			}
 		</style>
@@ -101,9 +101,10 @@
 				<option>sixteenLightWaves</option>
 				<option>sixteenWaves</option>
 				<option>sixteenHeavyWaves</option>
-				<option>fourStep</option>
-				<option>eightStep</option>
-				<option>sixteenStep</option>
+				<option>twoSteps</option>
+				<option>fourSteps</option>
+				<option>eightSteps</option>
+				<option>sixteenSteps</option>
 			</optgroup>
 		</select>
 		<select id="duration">
@@ -118,11 +119,25 @@
 			</optgroup>
 		</select>
 		<button id="animate">Animate</button>
+		
+		<div id="graph" class="graph"></div>
+		
 		<div class="ui-progressbar ui-widget ui-widget-content ui-corner-all" style="margin: 10px;">
 			<div id="bar" class="ui-progressbar-value ui-widget-header ui-corner-all" style="width: 100%;"></div>
 		</div>
-		<div id="fader" style="width: 45%; float: left; padding: 10px; margin: 10px;" class="ui-widget-content ui-corner-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tellus felis, porttitor vitae sollicitudin vitae, bibendum non tellus. Maecenas congue molestie lacus, at vulputate nulla pellentesque non. Vivamus tempor gravida dui quis accumsan. Donec luctus accumsan elit eu interdum. Phasellus pellentesque felis in sem viverra semper. Proin nec sem quis dolor rhoncus aliquet eget in nibh. Proin sed quam ut mi viverra ullamcorper at dignissim ipsum. Praesent quis posuere neque.</div>
-		<div id="slider" style="width: 45%; float: right; padding: 10px; margin: 10px;" class="ui-widget-content ui-corner-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tellus felis, porttitor vitae sollicitudin vitae, bibendum non tellus. Maecenas congue molestie lacus, at vulputate nulla pellentesque non. Vivamus tempor gravida dui quis accumsan. Donec luctus accumsan elit eu interdum. Phasellus pellentesque felis in sem viverra semper. Proin nec sem quis dolor rhoncus aliquet eget in nibh. Proin sed quam ut mi viverra ullamcorper at dignissim ipsum. Praesent quis posuere neque.</div>
-		<div id="graph" class="graph"></div>
+		<div id="fader" style="width: 45%; float: left; padding: 10px; margin: 10px;" class="ui-widget-content ui-corner-all">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nunc turpis, nec luctus nisi. Aliquam laoreet elementum sem, eget venenatis dui porttitor a. Quisque eu neque eu ligula ornare commodo sit amet a nibh. Morbi pharetra accumsan est vitae varius. Proin eget elit eu ipsum congue posuere quis in turpis. Suspendisse potenti. Nullam blandit lorem ac augue mollis id hendrerit ipsum consequat. Aliquam risus ligula, suscipit tempor aliquam sit amet, aliquam nec quam. Phasellus nibh magna, dapibus ac porta et, blandit ac magna. Curabitur nec nibh vitae risus interdum ultrices. Cras eu ante et ipsum ultricies mollis eget a quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui lorem, iaculis non dictum at, porttitor eget est.
+			Etiam quam risus, auctor in adipiscing sed, pulvinar ut mi. Maecenas sed massa nibh. Nam tristique euismod nibh, ac feugiat urna lacinia sit amet. Proin nec dignissim urna. Praesent tincidunt sapien id lacus dapibus imperdiet. Morbi lacinia, metus sed sagittis facilisis, metus libero porttitor sem, et ullamcorper nulla sapien ac lorem. Aliquam vitae vehicula arcu. In hac habitasse platea dictumst.
+			Morbi tempor consectetur risus eu vulputate. Pellentesque nulla felis, fermentum vel consectetur mollis, bibendum sit amet ligula. Mauris aliquam convallis justo, ut pharetra sapien ullamcorper at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget porttitor magna. Donec facilisis, ligula a pellentesque iaculis, arcu ipsum eleifend lorem, id volutpat eros justo quis lorem. In hac habitasse platea dictumst.
+			Donec pellentesque porttitor cursus. Duis rhoncus, dui eu ultrices feugiat, nunc est lacinia nisl, et auctor tortor velit a augue. Quisque volutpat lectus id lorem hendrerit porttitor. Aenean ac sem blandit dolor elementum vehicula. Duis bibendum consequat arcu et sagittis. Nullam eget augue est, a auctor nunc. Curabitur a est ipsum, et luctus metus.
+			In facilisis diam magna, ultrices imperdiet nibh. Integer eget odio dolor, id laoreet lectus. Nam ac sapien odio, eu hendrerit urna. Aliquam ut purus enim. In facilisis odio a orci egestas eleifend. Maecenas a luctus massa. Integer vulputate ligula rhoncus enim placerat ut hendrerit ligula consequat. Ut pharetra nisl quis ante semper convallis. Nullam id lacus vel augue tincidunt elementum sed id risus. Aliquam ut odio quam. Nullam felis ante, lobortis ac rhoncus id, placerat nec neque. Aliquam vulputate nisl pellentesque ante volutpat sodales.
+		</div>
+		<div id="slider" style="width: 45%; float: right; padding: 10px; margin: 10px;" class="ui-widget-content ui-corner-all">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nunc turpis, nec luctus nisi. Aliquam laoreet elementum sem, eget venenatis dui porttitor a. Quisque eu neque eu ligula ornare commodo sit amet a nibh. Morbi pharetra accumsan est vitae varius. Proin eget elit eu ipsum congue posuere quis in turpis. Suspendisse potenti. Nullam blandit lorem ac augue mollis id hendrerit ipsum consequat. Aliquam risus ligula, suscipit tempor aliquam sit amet, aliquam nec quam. Phasellus nibh magna, dapibus ac porta et, blandit ac magna. Curabitur nec nibh vitae risus interdum ultrices. Cras eu ante et ipsum ultricies mollis eget a quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui lorem, iaculis non dictum at, porttitor eget est.
+			Etiam quam risus, auctor in adipiscing sed, pulvinar ut mi. Maecenas sed massa nibh. Nam tristique euismod nibh, ac feugiat urna lacinia sit amet. Proin nec dignissim urna. Praesent tincidunt sapien id lacus dapibus imperdiet. Morbi lacinia, metus sed sagittis facilisis, metus libero porttitor sem, et ullamcorper nulla sapien ac lorem. Aliquam vitae vehicula arcu. In hac habitasse platea dictumst.
+			Morbi tempor consectetur risus eu vulputate. Pellentesque nulla felis, fermentum vel consectetur mollis, bibendum sit amet ligula. Mauris aliquam convallis justo, ut pharetra sapien ullamcorper at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget porttitor magna. Donec facilisis, ligula a pellentesque iaculis, arcu ipsum eleifend lorem, id volutpat eros justo quis lorem. In hac habitasse platea dictumst.
+			Donec pellentesque porttitor cursus. Duis rhoncus, dui eu ultrices feugiat, nunc est lacinia nisl, et auctor tortor velit a augue. Quisque volutpat lectus id lorem hendrerit porttitor. Aenean ac sem blandit dolor elementum vehicula. Duis bibendum consequat arcu et sagittis. Nullam eget augue est, a auctor nunc. Curabitur a est ipsum, et luctus metus.
+			In facilisis diam magna, ultrices imperdiet nibh. Integer eget odio dolor, id laoreet lectus. Nam ac sapien odio, eu hendrerit urna. Aliquam ut purus enim. In facilisis odio a orci egestas eleifend. Maecenas a luctus massa. Integer vulputate ligula rhoncus enim placerat ut hendrerit ligula consequat. Ut pharetra nisl quis ante semper convallis. Nullam id lacus vel augue tincidunt elementum sed id risus. Aliquam ut odio quam. Nullam felis ante, lobortis ac rhoncus id, placerat nec neque. Aliquam vulputate nisl pellentesque ante volutpat sodales.
+		</div>
 	</body>
 </html>
