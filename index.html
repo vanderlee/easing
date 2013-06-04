@@ -2,9 +2,8 @@
 	<head>
 		<title>jQuery Easing</title>
 		<!-- jQuery/jQueryUI (hosted) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-		<script src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
 		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
 		<link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css"/>
 		<style>
@@ -12,11 +11,6 @@
 				font-family:	'Segoe UI', Verdana, Arial, Helvetica, sans-serif;
 				font-size:		62.5%;
 			}		
-			
-			#switcher {
-				float: right;
-				display: inline-block;
-			}			
 			
 			pre {
 				background-color: white;
@@ -45,10 +39,7 @@
 		<script src="jquery.ease-1.0.js"></script>
 		<script src="jquery.vanderlee-easings-1.0.js"></script>
 		<script>			
-			$( function() {			
-				// For the documentation
-				$('#switcher').themeswitcher();
-							
+			$( function() {							
 				var visible = true;
 				$('#animate').click( function() {
 					var easing		= $('#easing').val();
@@ -77,8 +68,6 @@
 	</head>
 	
 	<body>
-		<div id="switcher"></div>	
-
 		<select id="easing">
 			<optgroup label="Easing">
 				<option>random</option>
